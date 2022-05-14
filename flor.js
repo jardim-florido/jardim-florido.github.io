@@ -46,51 +46,51 @@ function fall() {
 }
 
 function fall_sombra() {
- var ruidoC4 = 0.0001;
-        var posC4 = noise(millis() * ruidoC4) * 320;
+    var ruidoC4 = 0.0001;
+    var posC4 = noise(millis() * ruidoC4) * 320;
 
-        var ruidoC = 0.0001;
-        var posC = noise(millis() * ruidoC) * 204;
+    var ruidoC = 0.0001;
+    var posC = noise(millis() * ruidoC) * 204;
 
-        var ruidoD = 0.00008;
-        var posD = noise(millis() * ruidoD) * 39;
+    var ruidoD = 0.00008;
+    var posD = noise(millis() * ruidoD) * 39;
 
-        var ruidoZ = -0.0001;
-        var posZ = noise(millis() * ruidoZ) * 5;
-
-
-        var fog = millis() / 2009;
-
-        var historyOfNothing = fog % 5;
-
-        var dust = tan(radians(historyOfNothing));
-
-        var ruidoX = 0.0000081;
-        var posX = noise(millis() * ruidoX) * windowWidth;
-
-        var ruidoY = 0.0000008;
-        var posY = noise(millis() * ruidoX) * windowHeight;
+    var ruidoZ = -0.0001;
+    var posZ = noise(millis() * ruidoZ) * 5;
 
 
-        translate(posX, posY);
+    var fog = millis() / 2009;
 
-        for (var inYourFall = 0; inYourFall < 124; inYourFall++) {
+    var historyOfNothing = fog % 5;
 
-            noFill();
-            strokeWeight(2);
-            rotate(radians(fog));
-            stroke(200, hue, 270, 30);
-            rectMode(CENTER);
-            //triangle(100, 25, posD, -30, 36, 25);
-            ellipse(posD, posD, posC4, posC4);
-            /*
-            noFill();
-            strokeWeight(5);
-            stroke(255, 255, 255, 200);
-            line(60, 60, 80, 80);
-            */
+    var dust = tan(radians(historyOfNothing));
 
-        }
+    var ruidoX = 0.0000081;
+    var posX = noise(millis() * ruidoX) * windowWidth;
+
+    var ruidoY = 0.0000008;
+    var posY = noise(millis() * ruidoX) * windowHeight;
+
+
+    translate(posX, posY);
+
+    for (var inYourFall = 0; inYourFall < 124; inYourFall++) {
+
+        noFill();
+        strokeWeight(2);
+        rotate(radians(fog));
+        stroke(200, hue, 270, 30);
+        rectMode(CENTER);
+        //triangle(100, 25, posD, -30, 36, 25);
+        ellipse(posD, posD, posC4, posC4);
+        /*
+        noFill();
+        strokeWeight(5);
+        stroke(255, 255, 255, 200);
+        line(60, 60, 80, 80);
+        */
+
+    }
 
 
 }
@@ -240,16 +240,16 @@ function fall4() {
 
     var dust = tan(radians(historyOfNothing));
 
-        var ruidoX = 0.000009;
-        var posX = noise(millis() * ruidoX) * width + 200;
+    var ruidoX = 0.000009;
+    var posX = noise(millis() * ruidoX) * width + 200;
 
-        var ruidoY = -0.0001;
-        var posY = noise(millis() * ruidoY) * height;
+    var ruidoY = -0.0001;
+    var posY = noise(millis() * ruidoY) * height;
 
 
     x4[indexPosition4] = posX;
     y4[indexPosition4] = posY;
-    
+
 
 
 
@@ -262,22 +262,22 @@ function fall4() {
 
             var pos4 = (indexPosition4 + i) % num4;
             var radius4 = 8 + (num4 - i) / 2.0;
-           //rotate(radians(120));
-           // fill(255, 2, 209, 30);
+            //rotate(radians(120));
+            // fill(255, 2, 209, 30);
             rectMode(CENTER);
-        fill(mouseY, 255, hue, posC);
-        //strokeWeight(1);
-       // stroke(80, 47, 144, 180);
-          noStroke();
-          stroke(80, 47, 144, 80);
+            fill(mouseY, 255, hue, posC);
+            //strokeWeight(1);
+            // stroke(80, 47, 144, 180);
+            noStroke();
+            stroke(80, 47, 144, 80);
             ellipse(x4[pos4], y4[pos4], radius4, radius4);
 
-            
+
             pop();
         }
     }
 
-    }
+}
 
 /*
     function meumar(px, py, numPart, rad, opaF) {
@@ -311,18 +311,18 @@ function fall4() {
     }
     */
 
-    function meumar(px, py, numPart, rad, opaF) {
+function meumar(px, py, numPart, rad, opaF) {
     var besar = 0.00001;
     var vel = 0.0008;
 
 
     beginShape();
 
-  var ruidoX = 0.00002;
-        var posX = noise(millis() * ruidoX) * width;
+    var ruidoX = 0.00002;
+    var posX = noise(millis() * ruidoX) * width;
 
-        var ruidoY = 0.00008;
-        var posY = noise(millis() * ruidoX) * height;
+    var ruidoY = 0.00008;
+    var posY = noise(millis() * ruidoX) * height;
 
 
 
@@ -343,35 +343,35 @@ function fall4() {
 }
 
 
-    function aguadebeber(px, py, numPart, rad, opaF) {
+function aguadebeber(px, py, numPart, rad, opaF) {
 
-        var vel = 0.00078;
+    var vel = 0.00078;
 
-        beginShape();
+    beginShape();
 
-var ruidoX = 0.000009;
-        var posX = noise(millis() * ruidoX) * width;
+    var ruidoX = 0.000009;
+    var posX = noise(millis() * ruidoX) * width;
 
-        var ruidoY = 0.00007;
-        var posY = noise(millis() * ruidoY) * height;
-        translate(posX, posY);
+    var ruidoY = 0.00007;
+    var posY = noise(millis() * ruidoY) * height;
+    translate(posX, posY);
 
-        for (var i = 0; i < numPart; i++) {
+    for (var i = 0; i < numPart; i++) {
 
-            let radio = rad * noise(frameCount * vel * (i));
-            let ptoX = px + sin(radians(1000 / numPart) * i) * radio;
-            let ptoY = py + cos(radians(contador / numPart) * i) * radio;
-            //fill(255, 150, 13, opaF);
-            fill(13, 245, 255, opaF);
-            strokeWeight(1);
-            stroke(80, 47, 144, 120);
-            //noStroke();
-            vertex(ptoY, ptoX);
-        }
-        endShape();
+        let radio = rad * noise(frameCount * vel * (i));
+        let ptoX = px + sin(radians(1000 / numPart) * i) * radio;
+        let ptoY = py + cos(radians(contador / numPart) * i) * radio;
+        //fill(255, 150, 13, opaF);
+        fill(13, 245, 255, opaF);
+        strokeWeight(1);
+        stroke(80, 47, 144, 120);
+        //noStroke();
+        vertex(ptoY, ptoX);
     }
+    endShape();
+}
 
-    function ondeandavoce(px, py, numPart, rad, opaF) {
+function ondeandavoce(px, py, numPart, rad, opaF) {
 
     var vel = 0.000078;
 
@@ -402,260 +402,258 @@ var ruidoX = 0.000009;
 }
 
 
-    function fall3() {
+function fall3() {
 
-        var ruidoC4 = 0.00008;
-        var posC4 = noise(millis() * ruidoC4) * 82;
+    var ruidoC4 = 0.00008;
+    var posC4 = noise(millis() * ruidoC4) * 82;
 
-        var ruidoC = 0.0001;
-        var posC = noise(millis() * ruidoC) * 14;
+    var ruidoC = 0.0001;
+    var posC = noise(millis() * ruidoC) * 14;
 
-        var ruidoD = 0.00008;
-        var posD = noise(millis() * ruidoD) * 39;
+    var ruidoD = 0.00008;
+    var posD = noise(millis() * ruidoD) * 39;
 
-        var ruidoZ = -0.0001;
-        var posZ = noise(millis() * ruidoZ) * 5;
-
-
-        var fog = millis() / 29;
-
-        var historyOfNothing = fog % 5;
-
-        var dust = tan(radians(historyOfNothing));
-
-        var ruidoX = 0.000008;
-        var posX = noise(millis() * ruidoX) * width;
-
-        var ruidoY = 0.002;
-        var posY = noise(millis() * ruidoX) * height;
+    var ruidoZ = -0.0001;
+    var posZ = noise(millis() * ruidoZ) * 5;
 
 
+    var fog = millis() / 29;
 
-        for (var inYourFall = 0; inYourFall < 40; inYourFall++) {
+    var historyOfNothing = fog % 5;
 
-        translate(posX, posY);
+    var dust = tan(radians(historyOfNothing));
 
-            noStroke();
-            strokeWeight(2);
-            //rotate(radians(-fog));
-            fill(255, random(170), 0, (random(70)));
-            //rectMode(CENTER);
-            //triangle(-30, -75, -58, -20, -86, -75);
-            ellipse(5, 5, posC4, posC4);
-            /*
-            noFill();
-            strokeWeight(5);
-            stroke(255, 255, 255, 200);
-            line(60, 60, 80, 80);
-            */
+    var ruidoX = 0.000008;
+    var posX = noise(millis() * ruidoX) * width;
 
-        }
-
-    }
+    var ruidoY = 0.002;
+    var posY = noise(millis() * ruidoX) * height;
 
 
-    function fall2() {
 
-        var ruidoC4 = 0.0001;
-        var posC4 = noise(millis() * ruidoC4) * 180;
-
-        var ruidoC = 0.0001;
-        var posC = noise(millis() * ruidoC) * 124;
-
-        var ruidoD = 0.00008;
-        var posD = noise(millis() * ruidoD) * 39;
-
-        var ruidoZ = -0.0001;
-        var posZ = noise(millis() * ruidoZ) * 5;
-
-
-        var fog = millis() / 2009;
-
-        var historyOfNothing = fog % 5;
-
-        var dust = tan(radians(historyOfNothing));
-
-        var ruidoX = 0.0000081;
-        var posX = noise(millis() * ruidoX) * windowWidth;
-
-        var ruidoY = 0.0000008;
-        var posY = noise(millis() * ruidoX) * windowHeight;
-
+    for (var inYourFall = 0; inYourFall < 40; inYourFall++) {
 
         translate(posX, posY);
 
-        for (var inYourFall = 0; inYourFall < 124; inYourFall++) {
-
-            noFill();
-            strokeWeight(2);
-            rotate(radians(fog));
-            stroke(255, 170, hue, 30);
-            rectMode(CENTER);
-            //triangle(100, 25, posD, -30, 36, 25);
-            ellipse(posD, posD, posC4, posC4);
-            /*
-            noFill();
-            strokeWeight(5);
-            stroke(255, 255, 255, 200);
-            line(60, 60, 80, 80);
-            */
-
-        }
-
-    }
-
-
-
-    function sol() {
-
-        var ruidoC4 = 0.0002;
-        var posC4 = noise(millis() * ruidoC4) * 1.6;
-
-        var ruidoC = 0.0001;
-        var posC = noise(millis() * ruidoC) * 124;
-
-        var ruidoD = 0.0008;
-        var posD = noise(millis() * ruidoD) * 25;
-
-        var ruidoZ = -0.0001;
-        var posZ = noise(millis() * ruidoZ) * 5;
-
-
-        var fog = millis() / 2009;
-
-        var historyOfNothing = fog % 5;
-
-        var dust = tan(radians(historyOfNothing));
-
-        var ruidoX = 0.000009;
-        var posX = noise(millis() * ruidoX) * 200;
-
-        var ruidoY = 0.002;
-        var posY = noise(millis() * ruidoX) * 400;
-
-        translate(posX, posY);
-
-        for (var inYourFall = 0; inYourFall < 32; inYourFall++) {
-
-            noStroke();
-            rotate(radians(fog) * -7);
-            fill(255, 86, 80, 20);
-            rectMode(CENTER);
-            scale(posC4);
-            //triangle(-20, 25, 8, -30, 36, 25);
-            ellipse(0, 0, 20, 20);
-
-        }
-
-    }
-
-
-    function offset() {
-
-
-        var sinval = sin(angle);
-        var cosval = cos(angle);
-
-        var x = 150 + (cosval * radius);
-        var y = 50 + (sinval * radius);
-
-        var ruidoX = 0.0005;
-        var posX = noise(millis() * ruidoX) * 10;
-
-        var ruidoY = 0.0008;
-        var posY = noise(millis() * ruidoY) * 15;
-
-        fill(80, 47, 144, 120, 200);
-        //stroke(255);
         noStroke();
-        ellipse(x, y, posX, posX);
-
-        var x2 = x + cos(angle * sx) * radius / 2;
-        var y2 = y + sin(angle * sy) * radius / 2;
-
-        ellipse(x2, y2, posY, posY);
-
-        var x3 = x + cos(angle * sx) * radius / 3;
-        var y3 = y + cos(angle * sy) * radius / 2;
-
-        ellipse(x3, y3, posX, posX);
-
-        var x4 = x + sin(angle * sx) * radius / 3;
-        var y4 = y + cos(angle * sy) * radius / 4;
-
-        ellipse(x4 + posY, y4, posY, posY);
+        strokeWeight(2);
+        //rotate(radians(-fog));
+        fill(255, random(170), 0, (random(70)));
+        //rectMode(CENTER);
+        //triangle(-30, -75, -58, -20, -86, -75);
+        ellipse(5, 5, posC4, posC4);
+        /*
+        noFill();
+        strokeWeight(5);
+        stroke(255, 255, 255, 200);
+        line(60, 60, 80, 80);
+        */
 
     }
 
-    function offset1() {
+}
 
 
-        var sinval = sin(angle1);
-        var cosval = cos(angle1);
+function fall2() {
 
-        var x = 50 + (cosval * radius1);
-        var y = 50 + (sinval * radius1);
+    var ruidoC4 = 0.0001;
+    var posC4 = noise(millis() * ruidoC4) * 180;
 
-        var ruidoX = 0.0005;
-        var posX = noise(millis() * ruidoX) * 10;
+    var ruidoC = 0.0001;
+    var posC = noise(millis() * ruidoC) * 124;
 
-        var ruidoY = 0.0008;
-        var posY = noise(millis() * ruidoY) * 15;
+    var ruidoD = 0.00008;
+    var posD = noise(millis() * ruidoD) * 39;
 
-        fill(255, 200);
-        //stroke(255);
+    var ruidoZ = -0.0001;
+    var posZ = noise(millis() * ruidoZ) * 5;
+
+
+    var fog = millis() / 2009;
+
+    var historyOfNothing = fog % 5;
+
+    var dust = tan(radians(historyOfNothing));
+
+    var ruidoX = 0.0000081;
+    var posX = noise(millis() * ruidoX) * windowWidth;
+
+    var ruidoY = 0.0000008;
+    var posY = noise(millis() * ruidoX) * windowHeight;
+
+
+    translate(posX, posY);
+
+    for (var inYourFall = 0; inYourFall < 124; inYourFall++) {
+
+        noFill();
+        strokeWeight(2);
+        rotate(radians(fog));
+        stroke(255, 170, hue, 30);
+        rectMode(CENTER);
+        //triangle(100, 25, posD, -30, 36, 25);
+        ellipse(posD, posD, posC4, posC4);
+        /*
+        noFill();
+        strokeWeight(5);
+        stroke(255, 255, 255, 200);
+        line(60, 60, 80, 80);
+        */
+
+    }
+
+}
+
+
+
+function sol() {
+
+    var ruidoC4 = 0.0002;
+    var posC4 = noise(millis() * ruidoC4) * 1.6;
+
+    var ruidoC = 0.0001;
+    var posC = noise(millis() * ruidoC) * 124;
+
+    var ruidoD = 0.0008;
+    var posD = noise(millis() * ruidoD) * 25;
+
+    var ruidoZ = -0.0001;
+    var posZ = noise(millis() * ruidoZ) * 5;
+
+
+    var fog = millis() / 2009;
+
+    var historyOfNothing = fog % 5;
+
+    var dust = tan(radians(historyOfNothing));
+
+    var ruidoX = 0.000009;
+    var posX = noise(millis() * ruidoX) * 200;
+
+    var ruidoY = 0.002;
+    var posY = noise(millis() * ruidoX) * 400;
+
+    translate(posX, posY);
+
+    for (var inYourFall = 0; inYourFall < 32; inYourFall++) {
+
         noStroke();
-        ellipse(x, y, posX, posX);
-
-        var x2 = x + cos(angle1 * sx1) * radius1 / 2;
-        var y2 = y + sin(angle1 * sy1) * radius1 / 2;
-
-        ellipse(x2, y2, posY, posY);
-
-        var x3 = x + cos(angle1 * sx1) * radius1 / 3;
-        var y3 = y + cos(angle1 * sy1) * radius1 / 2;
-
-        ellipse(x3, y3, posX, posX);
-
-        var x4 = x + sin(angle1 * sx1) * radius1 / 3;
-        var y4 = y + cos(angle1 * sy1) * radius1 / 4;
-
-        ellipse(x4 + posY, y4, posY, posY);
+        rotate(radians(fog) * -7);
+        fill(255, 86, 80, 20);
+        rectMode(CENTER);
+        scale(posC4);
+        //triangle(-20, 25, 8, -30, 36, 25);
+        ellipse(0, 0, 20, 20);
 
     }
 
-
-    var num = 333;
-    var x = new Array([num]);
-    let y = new Array([num]);
-    var indexPosition = 0;
-
-    function toyollo() {
-        var ruidoX = 0.00009;
-        var posX = noise(millis() * ruidoX) * width;
-
-        var ruidoY = -0.0001;
-        var posY = noise(millis() * ruidoY) * height;
-
-        x[indexPosition] = posX;
-        y[indexPosition] = posY;
-
-        // stroke(0);
-        stroke(80, 47, 144, 180);
-        //fill(255, 255, 255, 70);
-        fill(255, contador, 255, 20);
-
-        // fill(255, 102);
-
-        indexPosition = (indexPosition + 1) % num;
-        for (var i = 0; i < num; i++) {
-            var pos = (indexPosition + i) % num;
-            var radius = 5 + (num - i) / 3.0;
-            ellipse(x[pos], y[pos], radius, radius);
+}
 
 
-        }
+function offset() {
+
+
+    var sinval = sin(angle);
+    var cosval = cos(angle);
+
+    var x = 150 + (cosval * radius);
+    var y = 50 + (sinval * radius);
+
+    var ruidoX = 0.0005;
+    var posX = noise(millis() * ruidoX) * 10;
+
+    var ruidoY = 0.0008;
+    var posY = noise(millis() * ruidoY) * 15;
+
+    fill(80, 47, 144, 120, 200);
+    //stroke(255);
+    noStroke();
+    ellipse(x, y, posX, posX);
+
+    var x2 = x + cos(angle * sx) * radius / 2;
+    var y2 = y + sin(angle * sy) * radius / 2;
+
+    ellipse(x2, y2, posY, posY);
+
+    var x3 = x + cos(angle * sx) * radius / 3;
+    var y3 = y + cos(angle * sy) * radius / 2;
+
+    ellipse(x3, y3, posX, posX);
+
+    var x4 = x + sin(angle * sx) * radius / 3;
+    var y4 = y + cos(angle * sy) * radius / 4;
+
+    ellipse(x4 + posY, y4, posY, posY);
+
+}
+
+function offset1() {
+
+
+    var sinval = sin(angle1);
+    var cosval = cos(angle1);
+
+    var x = 50 + (cosval * radius1);
+    var y = 50 + (sinval * radius1);
+
+    var ruidoX = 0.0005;
+    var posX = noise(millis() * ruidoX) * 10;
+
+    var ruidoY = 0.0008;
+    var posY = noise(millis() * ruidoY) * 15;
+
+    fill(255, 200);
+    //stroke(255);
+    noStroke();
+    ellipse(x, y, posX, posX);
+
+    var x2 = x + cos(angle1 * sx1) * radius1 / 2;
+    var y2 = y + sin(angle1 * sy1) * radius1 / 2;
+
+    ellipse(x2, y2, posY, posY);
+
+    var x3 = x + cos(angle1 * sx1) * radius1 / 3;
+    var y3 = y + cos(angle1 * sy1) * radius1 / 2;
+
+    ellipse(x3, y3, posX, posX);
+
+    var x4 = x + sin(angle1 * sx1) * radius1 / 3;
+    var y4 = y + cos(angle1 * sy1) * radius1 / 4;
+
+    ellipse(x4 + posY, y4, posY, posY);
+
+}
+
+
+var num = 333;
+var x = new Array([num]);
+let y = new Array([num]);
+var indexPosition = 0;
+
+function toyollo() {
+    var ruidoX = 0.00009;
+    var posX = noise(millis() * ruidoX) * width;
+
+    var ruidoY = -0.0001;
+    var posY = noise(millis() * ruidoY) * height;
+
+    x[indexPosition] = posX;
+    y[indexPosition] = posY;
+
+    // stroke(0);
+    stroke(80, 47, 144, 180);
+    //fill(255, 255, 255, 70);
+    fill(255, contador, 255, 20);
+
+    // fill(255, 102);
+
+    indexPosition = (indexPosition + 1) % num;
+    for (var i = 0; i < num; i++) {
+        var pos = (indexPosition + i) % num;
+        var radius = 5 + (num - i) / 3.0;
+        ellipse(x[pos], y[pos], radius, radius);
+
 
     }
 
-
+}

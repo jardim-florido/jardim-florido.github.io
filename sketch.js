@@ -39,19 +39,19 @@ let value2 = false;
 let config = {
     sun: true,
     toyo: false,
-    verde: true,
+    verde: false,
     papalotl: false,
     girasol: false,
-    giraluna: true,
+    giraluna: false,
     astr: true,
-    nieve: true,
+    nieve: false,
     rumor: false,
-    sombra: true,
+    sombra: false,
     noche: false,
     dia: true,
     amanece: false,
     ratito: false,
-    voce: true
+    voce: false
 }
 
 
