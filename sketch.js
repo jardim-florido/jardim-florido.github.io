@@ -36,21 +36,22 @@ let value1 = false;
 let value2 = false;
 */
 
-let config = {
-    sun: true,
-    toyo: false,
-    verde: false,
-    papalotl: false,
-    girasol: false,
-    giraluna: false,
-    astr: true,
-    nieve: false,
-    rumor: false,
-    sombra: false,
-    noche: false,
-    dia: true,
-    amanece: false,
-    ratito: false,
+let config = { 
+    giraluna: false, // Q
+    papalotl: false, // W    
+    verde: false, // E
+    toyo: false, // R
+    sun: true, // T
+    girasol: false, // Y
+    
+    astr: true, // A
+    nieve: false, // S
+    rumor: false, // D
+    sombra: false, // F
+    noche: false, // 2
+    dia: true, // 1
+    amanece: false, // 3
+    ratito: false, // h
     voce: false
 }
 
@@ -262,6 +263,8 @@ function draw() {
        */
 }
 
+// día:día - noiseField _ número 1
+
 function noiseField() {
     // noise field _
     push();
@@ -287,6 +290,8 @@ function noiseField() {
     znoise += ruido_inc;
 }
 
+// noche:noche - noiseField_noche _ número 2
+
 function noiseField_noche() {
     // noise field _
     push();
@@ -311,6 +316,8 @@ function noiseField_noche() {
     }
     znoise += ruido_inc;
 }
+
+// rojo_amanecer:amanece - noiseField_amanece _ número 3
 
 function noiseField_amanece() {
     // noise field _

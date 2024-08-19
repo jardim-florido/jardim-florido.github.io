@@ -1,3 +1,5 @@
+// kaleid_morado-blanco:giraluna - fall _ letra Q
+
 function fall() {
 
     var ruidoC4 = 0.0001;
@@ -44,6 +46,8 @@ function fall() {
     }
 
 }
+
+// kaleid_rosaamarillo+grande:sombra - fall4 _ letra F
 
 function fall_sombra() {
     var ruidoC4 = 0.0001;
@@ -95,6 +99,8 @@ function fall_sombra() {
 
 }
 
+// el sol:sun - falling _ letra T
+
 function falling() {
 
     var ruidoC4 = 0.0001;
@@ -139,6 +145,8 @@ function falling() {
 
 }
 
+// tiernito:ratito - quay _ letra h
+
 function quay() {
     var ruidoC4 = 0.00008;
     var posC4 = noise(millis() * ruidoC4) * 50;
@@ -181,6 +189,8 @@ function quay() {
     }
 }
 
+// estrellita/vida_breve:astr - weft3/cayendo _ letra A
+
 function cayendo() {
     var fog = millis() / 129;
     var between = random(30);
@@ -213,6 +223,7 @@ function cayendo() {
     }
 }
 
+// perlin_amarillo-morado_gusanito:rumor - fall4 _ letra D
 
 
 var num4 = 103;
@@ -311,6 +322,8 @@ function fall4() {
     }
     */
 
+// perlin-verde:meumar - verde _ letra E
+
 function meumar(px, py, numPart, rad, opaF) {
     var besar = 0.00001;
     var vel = 0.0008;
@@ -342,6 +355,7 @@ function meumar(px, py, numPart, rad, opaF) {
     endShape(CLOSE);
 }
 
+// perlin-azul_mariposa:aguadebeber - papalotl _ letra W
 
 function aguadebeber(px, py, numPart, rad, opaF) {
 
@@ -370,6 +384,8 @@ function aguadebeber(px, py, numPart, rad, opaF) {
     }
     endShape();
 }
+
+// grande_linea/mariposa:voce - ondeandavoce _ letra G
 
 function ondeandavoce(px, py, numPart, rad, opaF) {
 
@@ -453,6 +469,7 @@ function fall3() {
 
 }
 
+// kaleid_rosaamarillo:girasol - fall2 _ letra Y
 
 function fall2() {
 
@@ -549,6 +566,8 @@ function sol() {
 
 }
 
+// nieve_puntitos:nieve - weft8/offset/offset1 _ letra S
+
 
 function offset() {
 
@@ -624,6 +643,7 @@ function offset1() {
 
 }
 
+// perlin-morado:toyo - toyollo _ letra R
 
 var num = 333;
 var x = new Array([num]);
