@@ -43,6 +43,9 @@ let config = {
     toyo: false, // R
     sun: true, // T
     girasol: false, // Y
+    liriodeagua: false, // U    
+    raiz: false, // I
+
     
     astr: true, // A
     nieve: false, // S
@@ -180,6 +183,19 @@ function draw() {
 		fall();
         pop();
     }
+
+    if (config.liriodeagua) {
+        push();
+        alcatraz();
+        pop();
+    }
+
+    if (config.raiz) {
+        push();
+        enesima();
+        pop();
+    }
+
 
     if (config.astr) {
         push();
@@ -371,6 +387,15 @@ function keyPressed() {
     if ((key == 'Y') || (key == 'y')) {
         config.girasol = !config.girasol;
     }
+
+    if ((key == 'U') || (key == 'u')) {
+        config.liriodeagua = !config.liriodeagua;
+    }
+
+    if ((key == 'I') || (key == 'i')) {
+        config.raiz = !config.raiz;
+    }
+
 
     //
 

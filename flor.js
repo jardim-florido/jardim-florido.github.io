@@ -34,6 +34,7 @@ function fall() {
 
         noFill();
         strokeWeight(2);
+
         rotate(radians(fog));
         stroke(80, 47, 144, 60);
         rectMode(CENTER);
@@ -645,17 +646,17 @@ function offset1() {
 
 // perlin-morado:toyo - toyollo _ letra R
 
-var num = 333;
+var num = 233;
 var x = new Array([num]);
 let y = new Array([num]);
 var indexPosition = 0;
 
 function toyollo() {
     var ruidoX = 0.00009;
-    var posX = noise(millis() * ruidoX) * width;
+    var posX = noise(millis() * ruidoX) * 900;
 
     var ruidoY = -0.0001;
-    var posY = noise(millis() * ruidoY) * height;
+    var posY = noise(millis() * ruidoY) * 900;
 
     x[indexPosition] = posX;
     y[indexPosition] = posY;
@@ -668,10 +669,142 @@ function toyollo() {
     // fill(255, 102);
 
     indexPosition = (indexPosition + 1) % num;
-    for (var i = 0; i < num; i++) {
+  
+   for (var i = 0; i < num; i++) {
         var pos = (indexPosition + i) % num;
-        var radius = 5 + (num - i) / 3.0;
+        var radius = 2 + (num - i) / 3.0;
         ellipse(x[pos], y[pos], radius, radius);
+
+
+    }
+
+}
+
+// espiral:alcatraz - LirioDeAgua  _ letra U
+
+var angleInc = 0.001;
+
+
+function alcatraz() {
+
+
+                var fog = millis() / 2009;
+
+
+        var between = random(30);
+
+ translate(width/2, 0);
+    angleInc += 0.0004;
+
+ var scale = 50;
+ var offset = 500; // translate in y azis
+ var angle = 1;
+
+ var bruitC = 0.001;
+ var posC = noise(millis() * bruitC) * 8;
+
+ var bruitD = 0.0001;
+ var posD = noise(millis() * bruitD) * 38;
+
+
+ var bruitX = 0.00001;
+ var posX = noise(millis() * bruitX) * 305;
+
+ for(var x = 0; x <= width; x+=posX){
+    var y = offset + (sin(angle) * scale);
+push();
+    noStroke();
+    fill(156, 227, 125);
+    ellipse(x, y, posC, posC);
+    pop();
+            rotate(radians(fog));
+
+
+
+    angle += angleInc;
+ }
+}
+
+// raíz:enesima - raiz  _ letra I
+
+var angleInc = 0.001;
+
+
+function alcatraz() {
+
+
+                var fog = millis() / 2009;
+
+
+        var between = random(30);
+
+ translate(width/2, 0);
+    angleInc += 0.0004;
+
+ var scale = 50;
+ var offset = 500; // translate in y azis
+ var angle = 1;
+
+ var bruitC = 0.001;
+ var posC = noise(millis() * bruitC) * 8;
+
+ var bruitD = 0.0001;
+ var posD = noise(millis() * bruitD) * 38;
+
+
+ var bruitX = 0.00001;
+ var posX = noise(millis() * bruitX) * 305;
+
+ for(var x = 0; x <= width; x+=posX){
+    var y = offset + (sin(angle) * scale);
+push();
+    noStroke();
+    fill(156, 227, 125);
+    ellipse(x, y, posC, posC);
+    pop();
+            rotate(radians(fog));
+
+
+
+    angle += angleInc;
+ }
+}
+
+var num2 = 1933;
+
+var x2 = new Array([num2]);
+let y2 = new Array([num2]);
+var indexPosition2 = 0;
+
+
+function enesima() {
+
+
+var ruidoX2 = 0.00009;
+    var posX2 = noise(millis() * ruidoX2) * width;
+
+    var ruidoY2 = 0.00002;
+    var posY2 = noise(millis() * ruidoY2) * height;
+
+      var ruidoZ2 = -0.0001;
+    var posZ2 = noise(millis() * ruidoZ2) * 7;
+  
+    x2[indexPosition2] = posX2;
+    y2[indexPosition2] = posY2;
+
+    // stroke(0);
+    //stroke(80, 47, 144, 180);
+    strokeWeight(posZ2);  
+  //fill(255, 255, 255, 70);
+   stroke(79, 256, 169);
+
+    // fill(255, 102);
+
+    indexPosition2 = (indexPosition2 + 1) % num2;
+    for (var i = 0; i < num2; i++) {
+        var pos2 = (indexPosition2 + i) % num2;
+        var radius2 = 8 + (num2 - i) / 3.0;
+        line(x2[pos2], y2[pos2], x2[pos2], y2[pos2]);
 
 
     }
